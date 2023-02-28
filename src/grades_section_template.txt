@@ -1,0 +1,4 @@
+\section{{{team_name}}}
+    %%%SUBSECTIONS%%%
+    \newpage
+% team_name

@@ -1,0 +1,18 @@
+\section{{{team_name}}}
+    \begin{{table}}[H]
+        \centering
+        \begin{{tabular}}{{{paragraph_string}}}
+                 {image_string} \\
+              {name_string}\\
+              {extra_par}\\
+             \multicolumn{{{num_stud}}}{{l}}{{\textbf{{Mentor:}} {mentor_name}}}\\
+             \hline
+        \end{{tabular}}
+    \end{{table}}
+    \notes[12pt]{{15}}{{\textwidth}}
+% team_name, paragraph_string, image_string, extra_par, mentor_name
+% paragraph_string = "p{Xin}" the same number of times as there are team members
+% image_string = "\includegraphics[width=Xin]{photo_path/ID_NUM.png} &" where width same as above once for each student
+% name_string = "STUDENT NAME & FIRST LAST & ..."
+% extra_par = "&" repeated 1- num students
+% num_stud = number of students

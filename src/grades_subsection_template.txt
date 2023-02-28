@@ -1,0 +1,6 @@
+\subsection{{{assignment_name} -- {assignment_score}}}
+        {assignment_comments}
+% assignment_name, assignment_score, assignment_comments
+% assignment_name = Name of assignment
+% assignment_score = Team score on assignment
+% assignment_comments = Comments received on assignment
