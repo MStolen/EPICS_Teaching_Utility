@@ -1,3 +1,5 @@
+import pathlib
+
 import pandas as pd
 import re
 import argparse
@@ -9,6 +11,7 @@ from utils.zip_folder import zip_folder
 
 
 def create_info_sheet(args):
+    # TODO Add better comments
     # Load in team member data
     team_file = args.team_file
     student_file = args.student_info_file
@@ -78,6 +81,8 @@ def create_info_sheet(args):
     os_copy("src/NoImage.png", f"products/{output_dir}/NoImage.png")
     if image_location:
         os_copy(image_location, f"products/{output_dir}/StudentPictures")
+    elif pathlib.Path('class_data/student_photos').is_dir():
+        os_copy('class_data/student_photos', f"products/{output_dir}/StudentPictures")
     with open(f"products/{output_dir}/main.tex", 'w') as f:
         f.write(tex_data)
     zip_folder(f"products/{output_dir}", f"products/{output_dir}.zip")

@@ -8,6 +8,7 @@ from utils.os_copy import os_copy
 
 
 def aggregate_grades(args):
+    # TODO Add better comments
     with open("src/grades_template.tex") as f:
         document_data = f.read()
     with open("src/grades_section_template.txt") as f:
