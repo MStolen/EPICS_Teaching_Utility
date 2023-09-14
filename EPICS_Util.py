@@ -27,7 +27,7 @@ if __name__ == "__main__":
     parser_student_info.add_argument('--student-info-file', default="class_data/eLearning_user_information.csv")
     parser_student_info.add_argument('--document-title', default="EPICS Class List")
     parser_student_info.add_argument('--output-dir-name', default="student_info_doc")
-    parser_student_info.add_argument('--image-location')
+    parser_student_info.add_argument('--image-location', default="class_data/student_photos")
 
     # aggregate team grades into TEX file
     aggregate_grades_command = "aggregate-grades"

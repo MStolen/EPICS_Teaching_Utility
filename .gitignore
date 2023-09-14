@@ -2,3 +2,5 @@ class_data/**/*
 products/**/*
 venv
 .idea
+**/.DS_Store
+**/__pycache__
